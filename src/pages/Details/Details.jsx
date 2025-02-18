@@ -3,7 +3,6 @@ import SvgIcon from '../../components/SvgIcon/SvgIcon';
 import starCalculation from '../../utils/starCalculation.js';
 import { Carousel } from 'primereact/carousel';
 import css from './Details.module.css';
-import RentForm from '../../components/rentForm/rentForm.jsx';
 import { NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
 import createActiveLink from '../../utils/activeLink.js';
 import { useDispatch, useSelector } from 'react-redux';
@@ -15,6 +14,7 @@ import { getCamperById } from '../../redux/campers/operations.js';
 import Layout from '../../components/Layout/Layout.jsx';
 import useResize from '../../hooks/useResize.js';
 import Loader from '../../components/Loader/Loader.jsx';
+import RentForm from '../../components/RentForm/RentForm.jsx';
 
 export default function Details() {
   const mobile = useResize(768);
@@ -119,7 +119,7 @@ export default function Details() {
                 <Outlet />
               </Suspense>
             </div>
-            <RentForm />
+            <RentForm/>
           </div>
         </div>
       </div>
