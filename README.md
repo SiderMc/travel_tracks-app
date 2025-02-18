@@ -1,8 +1,19 @@
-# React + Vite
+## 🛠 Technologies & Libraries Used
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Core Stack
+- **React** – Library for building user interfaces  
+- **Redux Toolkit** – State management  
+- **React Router** – Routing  
 
-Currently, two official plugins are available:
+### UI Components
+- **PrimeReact** – UI component library  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Forms & Validation
+- **Formik** – Form state management  
+- **Yup** – Schema-based data validation  
+
+### API & Requests
+- **Axios** – HTTP client for API requests  
+
+### Data Persistence
+- **Redux Persist** – Persisting state in local storage  

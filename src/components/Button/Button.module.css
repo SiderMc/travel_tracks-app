@@ -1,0 +1,53 @@
+.primary,
+.secondary {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 200px;
+    text-wrap: nowrap;
+}
+
+.secondary {
+    align-self: center;
+    max-width: max-content;
+    padding: 9px 23px;
+    border: 1px solid var(--color-border);
+    color: var(--color-primary);
+    background-color: inherit;
+    transition: border 300ms linear;
+}
+
+.primary {
+    display: inline-block;
+    width: 130px;
+    max-width: 130px;
+    text-align: center;
+    padding: 10px 15px;
+    color: var(--color-white);
+    background: var(--color-accent-primary);
+    border: none;
+    transition: background 300ms linear;
+}
+
+@media screen and (min-width: 1440px) {
+    .primary {
+        width: 166px;
+        max-width: 166px;
+        padding: 16px;
+    }
+
+    .secondary {
+        padding: 15px 31px;
+    }
+}
+
+.primary:hover {
+    background: var(--color-accent-hover);
+    transition: background 300ms linear;
+}
+
+.secondary:hover {
+    border: 1px solid var(--color-accent-hover);
+    transition: border 300ms linear;
+}

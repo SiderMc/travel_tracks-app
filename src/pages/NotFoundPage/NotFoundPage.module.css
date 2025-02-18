@@ -1,0 +1,12 @@
+.page {
+    width: 100%;
+    height: calc(100dvh - 59px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 108px 54px;
+}
+
+.page__title {
+    text-align: center;
+}

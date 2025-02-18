@@ -1,0 +1,85 @@
+.catalog {
+  padding-block: 108px 54px;
+}
+
+.catalog__content {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  column-gap: 64px;
+}
+
+.btn__open,
+.btn__close {
+  position: fixed;
+  top: 59px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: var(--color-accent-primary);
+  border: none;
+  padding: 5px 20px;
+  border-radius: 0 0 11px 11px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.btn__open::before,
+.btn__open::after,
+.btn__close::before,
+.btn__close::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 2px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  transition: transform 300ms linear;
+}
+
+.btn__open::before {
+  transform: rotate(-35deg) translate(2px, 3px);
+  transition: transform 300ms linear;
+}
+
+.btn__open::after {
+  transform: rotate(35deg) translate(-4px, 2px);
+  transition: transform 300ms linear;
+}
+
+.btn__close::before {
+  transform: rotate(145deg) translate(4px, 2px);
+  transition: transform 300ms linear;
+}
+
+.btn__close::after {
+  transform: rotate(-145deg) translate(-2px, 3px);
+  transition: transform 300ms linear;
+}
+
+@media screen and (min-width: 768px) {
+
+  .btn__open,
+  .btn__close {
+    top: 72px;
+    left: calc(22.5dvw + 16px);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  .btn__open,
+  .btn__close {
+    top: 72px;
+    left: calc(241px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .btn__open,
+  .btn__close {
+    display: none;
+  }
+}

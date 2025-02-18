@@ -1,13 +1,16 @@
-import Header from '../Header/Header'
-import css from './Layout.module.css'
+import { useSelector } from 'react-redux';
+import Header from '../Header/Header';
+import Loader from '../Loader/Loader';
+import css from './Layout.module.css';
+import { selectCampersLoading } from '../../redux/campers/selectors';
 
-export default function Layout() {
+export default function Layout({ children }) {
+  const isLoading = useSelector(selectCampersLoading);
+  return (
     <div className={css.wrapper}>
-        <div className={css.container}>
-            <Header/>
-            <main>
-
-            </main>
-        </div>
+      {isLoading && <Loader />}
+      <Header />
+      <main>{children}</main>
     </div>
+  );
 }

@@ -1,0 +1,9 @@
+.wrapper {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: var(--font-family);
+    color: var(--color-primary);
+    font-weight: 400;
+}

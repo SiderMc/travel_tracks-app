@@ -1,0 +1,26 @@
+.futures__decor_line {
+    display: block;
+    height: 1px;
+    background-color: var(--color-border);
+    margin-block: 8px;
+}
+
+.futures__text_content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.futures__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+
+    .futures__text_content {
+        gap: 16px;
+    }
+
+}

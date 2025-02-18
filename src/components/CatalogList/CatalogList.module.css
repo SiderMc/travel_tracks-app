@@ -1,0 +1,32 @@
+.catalog__content {
+    display: flex;
+    row-gap: 56px;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.catalog__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+.catalog__empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.catalog__empty span{
+    font-size: 25px;
+}
+@media screen and (min-width:768px ) and (max-width: 1280px) {
+    .catalog__empty{
+    transform: translateX(100%);
+    }
+}
+@media screen and (min-width: 1280px) {
+    .catalog__content {
+        max-width: calc(100% - 64px - 360px);
+    }
+}

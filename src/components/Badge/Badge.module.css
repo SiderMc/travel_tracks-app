@@ -1,0 +1,12 @@
+.badge__label_name {
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+    .badge__label_name {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

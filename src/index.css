@@ -1,23 +1,57 @@
-*, *::before, *::after{
-    box-sizing: border-box; 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-*{
-    margin: 0; 
-    padding: 0; 
+
+* {
+    margin: 0;
+    padding: 0;
 }
-ul,ol{
+
+ul,
+ol {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
+    color: inherit;
 }
 
-/* html:focus-within{
-    scroll-behavior: smooth; 
-} */
+input {
+    outline: none;
+}
 
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding-inline: 20px;
+    margin: 0 auto;
+}
 
-/* body, html{
-    height: 100%; 
-    scroll-behavior: smooth; 
-} */
+@media screen and (min-width:768px) {
+    .container {
+        padding-inline: 32px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .container {
+        padding-inline: 64px;
+    }
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-accent-primary);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-background-light);
+    border-radius: 10px;
+}

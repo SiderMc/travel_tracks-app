@@ -1,0 +1,8 @@
+.type__list {
+    display: flex;
+    column-gap: 12px;
+    row-gap: 8px;
+    flex-wrap: wrap;
+    max-height: 212px;
+    overflow-y: auto;
+}
